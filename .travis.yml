@@ -14,7 +14,7 @@ install:
   - git clone -b master https://github.com/xiongzhun/hapv.git
   - cd hapv
   - npm install  #安装hexo及插件
-  - npm run build:win  #安装hexo及插件
+  - npm run build:mac  #安装hexo及插件
 
 script:
 
@@ -28,8 +28,8 @@ after_script:
   - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master:master
 #   - git push --force --quiet "https://${username}:${pw}@${CODING_ADD}" master:master  #Travis_Token是在Travis中配置环境变量的名称
 branches:
-    - gh-pages
-    - ci
+#    - gh-pages
+#    - ci
 env:
  global:
    - GH_REF: github.com/xiongzhun/videoplayer.git  #设置GH_REF
