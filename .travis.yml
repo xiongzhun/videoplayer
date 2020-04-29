@@ -14,7 +14,7 @@ install:
   - git clone -b master https://github.com/xiongzhun/hapv.git
   - cd hapv
   - npm install  #安装hexo及插件
-  - npm run build:mac  #安装hexo及插件
+  - npm run build:win  #安装hexo及插件
 
 script:
 
